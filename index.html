@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3_fruit-brust</title>
+    <link rel="shortcut icon" href="images/team.png" type="image/x-icon">
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/b6f8661a64.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts  -->
+
+    <style>
+        .slider-top {
+            text-align: center;
+            position: relative;
+            top: -200px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin: auto;
+        }
+
+        .team-meet {
+            position: relative;
+            top: -150px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .team-meet {
+                position: relative;
+                top: -240px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Here >> Navbars  -->
+    <section class="container mt-7 mx-auto">
+
+        <div class="navbar bg-base-100  p-5 bg-[#F85559] rounded-3xl text-white">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-center ">
+                <span class="text-lg font-extrabold"><img src="images/logo.png" alt="" class="inline w-[15%] mr-2">Fruit
+                    Brust</span>
+            </div>
+
+            <div class="navbar-end">
+                <div class="form-control hidden lg:inline-block">
+                    <input type="text" placeholder="Search Here"
+                        class="input input-bordered w-24 md:w-auto rounded-full " />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class=" dropdown dropdown-end lg:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul class="shadow menu dropdown-content bg-base-100 rounded-box ">
+                        li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Here >> Hero Section >> Slider Banner  -->
+    <section class="container mt-7 mx-auto">
+
+        <div class="carousel w-full">
+
+            <div id="slide1" class="carousel-item relative w-full h-[80vh]"
+                style="background-image: url(images/banner1.png); width:100%;">
+                <div class="hero-overlay bg-opacity-60 ">
+                    <div class="hero-content text-center text-neutral-content mt-10">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full" style="background-image: url(images/banner2.png);">
+                <div class="hero-overlay bg-opacity-60 ">
+                    <div class="hero-content text-center text-neutral-content mt-10">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full" style="background-image: url(images/banner3.png);">
+                <div class="hero-overlay bg-opacity-60 ">
+                    <div class="hero-content text-center text-neutral-content mt-10">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide4" class="carousel-item relative w-full" style="background-image: url(images/banner4.png);">
+                <div class="hero-overlay bg-opacity-60 ">
+                    <div class="hero-content text-center text-neutral-content mt-10">
+                        <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+
+        <!-- shadow-xl p-10 -->
+        <div class="slider-top">
+            <div class="flex items-center justify-center">
+                <!-- Fruit Card- 1 -->
+                <div class="card bg-base-100 py-5">
+                    <figure class="p-5">
+                        <img src="/images/fruit1.png" alt="Fruit-1" class="rounded-full " />
+                    </figure>
+                    <p class="text-center text-xs ">Apple</p>
+                </div>
+
+                <!-- Fruit Card- 2 -->
+                <div class="card bg-base-100 py-5">
+                    <figure class="p-5">
+                        <img src="/images/fruit2.png" alt="Fruit-2" class="rounded-full " />
+                    </figure>
+                    <p class="text-center text-xs">Banana</p>
+                </div>
+
+                <!-- Fruit Card- 3 -->
+                <div class="card bg-base-100 py-5">
+                    <figure class="p-5">
+                        <img src="/images/fruit3.png" alt="Fruit-3" class="rounded-full " />
+                    </figure>
+                    <p class="text-center text-xs">Orange</p>
+                </div>
+
+                <!-- Fruit Card- 4 -->
+                <div class="card bg-base-100 py-5">
+                    <figure class="p-5">
+                        <img src="/images/fruit4.png" alt="Fruit-4" class="rounded-full " />
+                    </figure>
+                    <p class="text-center text-xs">Pineapple</p>
+                </div>
+
+                <!-- Fruit Card- 5 -->
+                <div class="card bg-base-100 py-5">
+                    <figure class="p-5">
+                        <img src="/images/fruit5.png" alt="Fruit-5" class="" />
+                    </figure>
+                    <p class="text-center text-xs">Strawberry</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Here >> Meet the Team Section  -->
+    <section class="container mt-7 mx-auto">
+        <div class="hero min-h-screen" style="background-image: url(images/team.png);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content ">
+                <div class=" max-w-md team-meet">
+                    <h1 class="mb-5 text-5xl font-bold">Meet Our Team</h1>
+                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center mx-auto justify-center mt-60 text-white">
+
+                <!-- Member-1 -->
+                <div class="card shadow-xl p-10 items-center">
+                    <div class="avatar mb-5">
+                        <div class=" rounded-full">
+                            <img src="/images/member1.png" />
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold hover:text-[#F85559]">Mr John Alex</h3>
+                        <p class="text-sm my-2">CEO, Founder</p>
+                        <div class="flex justify-center items-center mx-auto gap-2">
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member-2 -->
+                <div class="card shadow-xl p-10 items-center">
+                    <div class="avatar mb-5">
+                        <div class=" rounded-full">
+                            <img src="/images/member2.png" />
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold hover:text-[#F85559]">Mrs Khaleda</h3>
+                        <p class="text-sm my-2">General Manager</p>
+                        <div class="flex justify-center items-center mx-auto gap-2">
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member-3 -->
+                <div class="card shadow-xl p-10 items-center">
+                    <div class="avatar mb-5">
+                        <div class=" rounded-full">
+                            <img src="/images/member3.png" />
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold hover:text-[#F85559]">Mr Rohimullah</h3>
+                        <p class="text-sm my-2">Fruits Expert</p>
+                        <div class="flex justify-center items-center mx-auto gap-2">
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member-4 -->
+                <div class="card shadow-xl p-10 items-center">
+                    <div class="avatar mb-5">
+                        <div class=" rounded-full">
+                            <img src="/images/member4.png" />
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold hover:text-[#F85559]">Mrs Alur Chop</h3>
+                        <p class="text-sm my-2">Khadok Bisesoggo</p>
+                        <div class="flex justify-center items-center mx-auto gap-2">
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-circle bg-[#F85559]">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+    <!-- Here >> Footer Section  -->
+    <section>
+        <footer class="footer footer-center p-24 bg-base-200 text-base-content rounded bg-[#121212] text-white">
+            <div class="text-center flex justify-center"><img src="images/logo.png" alt="" class="w-[20%] mr-2">
+                <h2 class="text-3xl font-bold">Fruit Brust</h2>
+            </div>
+            <div class="grid grid-flow-col gap-4 ">
+                <a class="link link-hover hover:text-[#F85559]">About us</a>
+                <a class="link link-hover hover:text-[#F85559]">Contact</a>
+                <a class="link link-hover hover:text-[#F85559]">Jobs</a>
+                <a class="link link-hover hover:text-[#F85559]">Press kit</a>
+                <a class="link link-hover hover:text-[#F85559]">Privacy</a>
+                <a class="link link-hover hover:text-[#F85559]">Terms of Service</a>
+            </div>
+
+            <div>
+                <div class="grid grid-flow-col gap-4">
+                    <!-- <div class="flex justify-center items-center mx-auto gap-2"> -->
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2023 - All right reserved by :
+                    <a href="#" class="link link-hover hover:text-[#F85559]">Fruit Brust</a> & Developed by : <a href="https://github.com/sorowar-cse" class="link link-hover hover:text-[#F85559]">Sorowar Mahabub</a></p>
+            </div>
+        </footer>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</body>
+
+</html>
