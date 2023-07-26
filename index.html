@@ -15,8 +15,15 @@
     <script src="https://kit.fontawesome.com/b6f8661a64.js" crossorigin="anonymous"></script>
 
     <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <style>
+        .lato {
+            font-family: 'Lato', sans-serif;
+        }
+
         .slider-top {
             text-align: center;
             position: relative;
@@ -41,23 +48,24 @@
     </style>
 </head>
 
-<body class="p-5 lg:p-0">
+<body class="p-5 lg:p-0 lato">
 
     <!-- Here >> Navbars  -->
     <section class="container mt-7 mx-auto">
 
-        <div class="navbar bg-base-100  p-5 bg-[#F85559] rounded-3xl text-white">
+        <div class="navbar  p-5 bg-[#F85559] rounded-3xl text-white">
             <div class="navbar-start hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
+                <ul class="menu menu-horizontal text-base font-normal">
+                    <li><a class="hover:text-white">Home</a></li>
+                    <li><a class="hover:text-white">About</a></li>
+                    <li><a class="hover:text-white">Shop</a></li>
+                    <li><a class="hover:text-white">All Fruits</a></li>
                 </ul>
             </div>
 
-            <div class="navbar-center ">
-                <span class="text-lg font-extrabold"><img src="images/logo.png" alt="" class="inline w-[15%] mr-2">Fruit
+            <div class="navbar-center lg:text-center hover:bg-white hover:rounded-full hover:text-[#F85559]">
+                <span class="text-3xl p-2 lg:text-4xl font-bold w-80"><img src="images/logo.png" alt=""
+                        class="inline w-10 mr-2">Fruit
                     Brust</span>
             </div>
 
@@ -74,7 +82,8 @@
                                 d="M4 6h16M4 12h16M4 18h7" />
                         </svg>
                     </label>
-                    <ul class="shadow menu dropdown-content bg-base-100 rounded-box ">
+                    <ul
+                        class="shadow menu dropdown-content bg-base-100 rounded-box text-base font-medium hover:text-white">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Shop</a></li>
@@ -95,10 +104,11 @@
                 style="background-image: url(images/banner1.png); width:100%;">
                 <div class="hero-overlay bg-opacity-60 ">
                     <div class="hero-content text-center text-neutral-content mt-10">
-                        <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                        <div class="max-w-md ">
+                            <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                            <button class="btn cursor-pointer bg-[#F85559] border-0 text-white hover:text-black">Shop
+                                Now</button>
                         </div>
                     </div>
                 </div>
@@ -115,7 +125,7 @@
                         <div class="max-w-md">
                             <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
                             <p class="mb-5">We supply highly quality organic products</p>
-                            <button class="btn bg-[#F85559] border-0">Shop Now</button>
+                            <button class="btn bg-[#F85559] border-0 hover:bg-white hover:text-black">Shop Now</button>
                         </div>
                     </div>
                 </div>
@@ -253,10 +263,11 @@
             </div>
         </div>
 
-        <div class="mt-10 mx-auto items-center justify-center flex flex-col gap-5 lg:flex-row">
+        <!-- <div class="mt-10 mx-auto items-center justify-center flex flex-col gap-7 lg:flex-row"> -->
+        <div class="mt-10 mx-auto items-center justify-center grid gap-5 grid-rows-1 lg:grid-cols-4">
             <!-- Card-01  -->
-            <div class="card w-72 shadow-md flex-1">
-                <figure class="px-10 pt-10">
+            <div class="card shadow-md ">
+                <figure class="px-8 pt-8">
                     <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -296,8 +307,8 @@
             </div>
 
             <!-- Card-02  -->
-            <div class="card w-72 shadow-md flex-1">
-                <figure class="px-10 pt-10">
+            <div class="card shadow-md ">
+                <figure class="px-8 pt-8">
                     <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -337,8 +348,8 @@
             </div>
 
             <!-- Card-03  -->
-            <div class="card w-72 shadow-md flex-1">
-                <figure class="px-10 pt-10">
+            <div class="card shadow-md ">
+                <figure class="px-8 pt-8">
                     <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -378,8 +389,8 @@
             </div>
 
             <!-- Card-04  -->
-            <div class="card w-72 shadow-md flex-1">
-                <figure class="px-10 pt-10">
+            <div class="card shadow-md ">
+                <figure class="px-8 pt-8">
                     <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
@@ -541,9 +552,114 @@
         </div>
     </section>
 
+
+    <!-- Here >> Why Choose Us Section  -->
+    <section class="container mt-12 mx-auto deal">
+        <div class=" items-center text-center ">
+            <h1 class="mb-5 text-4xl font-bold">Why Choose Us</h1>
+            <p class="mb-5 max-w-2xl items-center text-center justify-center mx-auto">Contrary to popular belief, is not
+                simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
+                2000 years old.</p>
+        </div>
+
+        <div class="grid grid-rows-1 lg:grid-cols-3 gap-7 justify-center items-center">
+            <!-- left-one-div  -->
+            <div>
+                <!-- choose card 1 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+                    <div class="">
+                        <i class="fas fa-shipping-fast text-[#F85559] text-5xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold ">Free Shipping</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">Our products are delivered free of charge to your home.</p>
+                    </div>
+                </div>
+
+                <!-- choose card 2 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+                    <div class="">
+                        <i class="fas fa-headset text-[#F85559] text-5xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">24/7 Support</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">We are always by your side. If you have any problem, you can contact us at
+                            any time.</p>
+                    </div>
+                </div>
+
+                <!-- choose card 3 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+                    <div class="">
+                        <i class="fas fa-money-bill-wave text-[#F85559] text-5xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold">Money Back</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">If you are not satisfied with our product, we will refund your money.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- middle-one-div -->
+            <div class="w-full ">
+                <img src="images/whychoose1.png" alt="" class="w-full ">
+            </div>
+
+            <!-- right-one-div  -->
+            <div>
+                <!-- choose card 1 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+
+                    <div class="text-right">
+                        <h2 class="text-2xl font-bold">Free Shipping</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">Our products are delivered free of charge to your home. You can order
+                            products from anywhere in the country.</p>
+                    </div>
+                    <div class="">
+                        <i class="fas fa-shipping-fast text-[#F85559] text-5xl"></i>
+                    </div>
+                </div>
+
+                <!-- choose card 2 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+
+                    <div class="text-right">
+                        <h2 class="text-2xl font-bold">24/7 Support</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">We are always by your side. If you have any problem, you can contact us at
+                            any time.</p>
+                    </div>
+                    <div class="">
+                        <i class="fas fa-headset text-[#F85559] text-5xl"></i>
+                    </div>
+                </div>
+
+                <!-- choose card 3 -->
+                <div class="flex items-center gap-5 mb-5 bg-gray-100 rounded-lg p-5 hover:shadow-md">
+
+                    <div class="text-right">
+                        <h2 class="text-2xl font-bold">Money Back</h2>
+                        <div class="divider"></div>
+                        <p class="text-sm">If you are not satisfied with our product, we will refund your money.</p>
+                    </div>
+                    <div class="">
+                        <i class="fas fa-money-bill-wave text-[#F85559] text-5xl"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- Here >> Footer Section  -->
     <section class=" mt-12 mx-auto">
-        <footer class="footer footer-center mx-auto justify-center text-center items-center p-24 rounded bg-[#121212] text-white">
+        <footer
+            class="footer footer-center mx-auto justify-center text-center items-center p-24 rounded bg-[#121212] text-white">
             <div class="text-center flex justify-center"><img src="images/logo.png" alt="" class="w-[20%] mr-2">
                 <h2 class="text-3xl font-bold">Fruit Brust</h2>
             </div>
@@ -560,23 +676,23 @@
                 <div class="grid grid-cols-3 lg:grid-cols-6 gap-10">
                     <!-- <div class="flex justify-center items-center mx-auto gap-2"> -->
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-facebook-f"></i>
-                    </a></div>
+                            <i class="fab fa-facebook-f"></i>
+                        </a></div>
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-twitter"></i>
-                    </a></div>
+                            <i class="fab fa-twitter"></i>
+                        </a></div>
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-instagram"></i>
-                    </a></div>
+                            <i class="fab fa-instagram"></i>
+                        </a></div>
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a></div>
+                            <i class="fab fa-linkedin-in"></i>
+                        </a></div>
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-youtube"></i>
-                    </a></div>
+                            <i class="fab fa-youtube"></i>
+                        </a></div>
                     <div><a href="#" class="btn btn-circle bg-[#F85559]">
-                        <i class="fab fa-github"></i>
-                    </a></div>
+                            <i class="fab fa-github"></i>
+                        </a></div>
                 </div>
             </div>
             <div>
