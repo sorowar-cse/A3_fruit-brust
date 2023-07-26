@@ -32,16 +32,16 @@
             top: -150px;
         }
 
-        @media screen and (max-width: 768px) {
+        /* @media screen and (max-width: 768px) {
             .team-meet {
                 position: relative;
                 top: -240px;
             }
-        }
+        } */
     </style>
 </head>
 
-<body>
+<body class="p-5 lg:p-0">
 
     <!-- Here >> Navbars  -->
     <section class="container mt-7 mx-auto">
@@ -62,10 +62,9 @@
             </div>
 
             <div class="navbar-end">
-                <div class="form-control hidden lg:inline-block">
-                    <input type="text" placeholder="Search Here"
-                        class="input input-bordered w-24 md:w-auto rounded-full " />
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="bg-white rounded-full hidden lg:inline-block">
+                    <input type="text" placeholder="Search Here" class="w-auto mx-2 my-2 p-2">
+                    <i class="fa-solid fa-magnifying-glass text-black mr-5"></i>
                 </div>
                 <div class=" dropdown dropdown-end lg:hidden">
                     <label tabindex="0" class="btn btn-ghost btn-circle ">
@@ -76,7 +75,7 @@
                         </svg>
                     </label>
                     <ul class="shadow menu dropdown-content bg-base-100 rounded-box ">
-                        li><a>Home</a></li>
+                        <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
@@ -162,13 +161,12 @@
             </div>
         </div>
 
-        <br><br><br><br><br>
 
-        <!-- shadow-xl p-10 -->
-        <div class="slider-top">
-            <div class="flex items-center justify-center">
+        <!--  p-10 -->
+        <div class="slider-top shadow-xl mt-36 lg:mt-20">
+            <div class="flex items-center justify-center mx-auto">
                 <!-- Fruit Card- 1 -->
-                <div class="card bg-base-100 py-5">
+                <div class="card py-5">
                     <figure class="p-5">
                         <img src="/images/fruit1.png" alt="Fruit-1" class="rounded-full " />
                     </figure>
@@ -211,15 +209,232 @@
         </div>
     </section>
 
+    <!-- Here >> Deal of the Month Section  -->
+    <section class="container mt-0 mx-auto deal">
+        <div class="flex flex-col lg:flex-row items-center text-center lg:text-left">
+
+            <div class="flex-1">
+                <h1 class="mb-5 text-4xl font-bold">Deal of the day</h1>
+                <p class="mb-5 max-w-2xl">Contrary to popular belief, is not simply random text. It has roots in a piece
+                    of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+
+            <div class="">
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max ">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <p class="mt-3">:</p>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <p class="mt-3">:</p>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+                            <span style="--value:09;"></span>
+                        </span>
+                        minutes
+                    </div>
+                    <p class="mt-3">:</p>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl font-bold">
+                            <span style="--value:02;"></span>
+                        </span>
+                        seconds
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 mx-auto items-center justify-center flex flex-col gap-5 lg:flex-row">
+            <!-- Card-01  -->
+            <div class="card w-72 shadow-md flex-1">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-bold mb-2">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Apple</p>
+                    <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star-half-alt text-[#F85559]"></i>
+                    </p>
+                    <div class="card-actions">
+                        <a href="#my_modal_1" class="text-[#F85559] hover:underline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal 1-->
+            <div class="modal" id="my_modal_1">
+                <div class="modal-box ">
+                    <figure class="p-5">
+                        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl ml-[35%]" />
+                    </figure>
+                    <div class="card-body items-center text-center justify-center">
+                        <h2 class="card-title font-bold mb-2">Apple</h2>
+                        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star-half-alt text-[#F85559]"></i>
+                        </p>
+                        <div class="">
+                            <a href="#" class="btn text-[#F85559] border-[#F85559]  mr-20">Close</a>
+                            <a href="#" class="btn bg-[#F85559] border-0 text-white  hover:text-black">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-02  -->
+            <div class="card w-72 shadow-md flex-1">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-bold mb-2">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Orange</p>
+                    <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star-half-alt text-[#F85559]"></i>
+                    </p>
+                    <div class="card-actions">
+                        <a href="#my_modal_2" class="text-[#F85559] hover:underline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal 2-->
+            <div class="modal" id="my_modal_2">
+                <div class="modal-box ">
+                    <figure class="p-5">
+                        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl ml-[35%]" />
+                    </figure>
+                    <div class="card-body items-center text-center justify-center">
+                        <h2 class="card-title font-bold mb-2">Orange</h2>
+                        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star-half-alt text-[#F85559]"></i>
+                        </p>
+                        <div class="">
+                            <a href="#" class="btn text-[#F85559] border-[#F85559]  mr-20">Close</a>
+                            <a href="#" class="btn bg-[#F85559] border-0 text-white  hover:text-black">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-03  -->
+            <div class="card w-72 shadow-md flex-1">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-bold mb-2">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Dragon</p>
+                    <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star-half-alt text-[#F85559]"></i>
+                    </p>
+                    <div class="card-actions">
+                        <a href="#my_modal_3" class="text-[#F85559] hover:underline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal 3-->
+            <div class="modal" id="my_modal_3">
+                <div class="modal-box ">
+                    <figure class="p-5">
+                        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl ml-[35%]" />
+                    </figure>
+                    <div class="card-body items-center text-center justify-center">
+                        <h2 class="card-title font-bold mb-2">Dragon</h2>
+                        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star-half-alt text-[#F85559]"></i>
+                        </p>
+                        <div class="">
+                            <a href="#" class="btn text-[#F85559] border-[#F85559]  mr-20">Close</a>
+                            <a href="#" class="btn bg-[#F85559] border-0 text-white  hover:text-black">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card-04  -->
+            <div class="card w-72 shadow-md flex-1">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-bold mb-2">12.90$ - 18.85$</h2>
+                    <div class="divider"></div>
+                    <p>Banana</p>
+                    <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                            class="fas fa-star text-[#F85559]"></i><i class="fas fa-star-half-alt text-[#F85559]"></i>
+                    </p>
+                    <div class="card-actions">
+                        <a href="#my_modal_4" class="text-[#F85559] hover:underline">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modal 4-->
+            <div class="modal" id="my_modal_4">
+                <div class="modal-box ">
+                    <figure class="p-5">
+                        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl ml-[35%]" />
+                    </figure>
+                    <div class="card-body items-center text-center justify-center">
+                        <h2 class="card-title font-bold mb-2">Banana</h2>
+                        <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                        <p class="mb-3"><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star text-[#F85559]"></i><i
+                                class="fas fa-star-half-alt text-[#F85559]"></i>
+                        </p>
+                        <div class="">
+                            <a href="#" class="btn text-[#F85559] border-[#F85559]  mr-20">Close</a>
+                            <a href="#" class="btn bg-[#F85559] border-0 text-white  hover:text-black">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="btn bg-[#F85559] border-0 text-white ml-[35%] lg:ml-[50%] mt-10 hover:text-black">Shop
+            Now</button>
+    </section>
+
     <!-- Here >> Meet the Team Section  -->
     <section class="container mt-7 mx-auto">
         <div class="hero min-h-screen" style="background-image: url(images/team.png);">
-            <div class="hero-overlay bg-opacity-70"></div>
-            <div class="hero-content text-center text-neutral-content ">
-                <div class=" max-w-md team-meet">
-                    <h1 class="mb-5 text-5xl font-bold">Meet Our Team</h1>
-                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div class="hero-overlay bg-opacity-70">
+                <div class="hero-content text-center text-neutral-content  mt-10">
+                    <div class="max-w-md ">
+                        <h1 class="mb-5 text-5xl font-bold">Meet Our Team</h1>
+                        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece
+                            of
+                            classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
                 </div>
             </div>
 
@@ -326,52 +541,53 @@
         </div>
     </section>
 
-    <br><br><br>
     <!-- Here >> Footer Section  -->
-    <section>
-        <footer class="footer footer-center p-24 bg-base-200 text-base-content rounded bg-[#121212] text-white">
+    <section class=" mt-12 mx-auto">
+        <footer class="footer footer-center mx-auto justify-center text-center items-center p-24 rounded bg-[#121212] text-white">
             <div class="text-center flex justify-center"><img src="images/logo.png" alt="" class="w-[20%] mr-2">
                 <h2 class="text-3xl font-bold">Fruit Brust</h2>
             </div>
-            <div class="grid grid-flow-col gap-4 ">
-                <a class="link link-hover hover:text-[#F85559]">About us</a>
-                <a class="link link-hover hover:text-[#F85559]">Contact</a>
-                <a class="link link-hover hover:text-[#F85559]">Jobs</a>
-                <a class="link link-hover hover:text-[#F85559]">Press kit</a>
-                <a class="link link-hover hover:text-[#F85559]">Privacy</a>
-                <a class="link link-hover hover:text-[#F85559]">Terms of Service</a>
+            <div class="grid grid-cols-3 lg:grid-cols-6 gap-7 mb-0">
+                <div><a class="link link-hover hover:text-[#F85559]">About us</a></div>
+                <div><a class="link link-hover hover:text-[#F85559]">Contact</a></div>
+                <div><a class="link link-hover hover:text-[#F85559]">Jobs</a></div>
+                <div> <a class="link link-hover hover:text-[#F85559]">Press kit</a></div>
+                <div><a class="link link-hover hover:text-[#F85559]">Privacy</a></div>
+                <div><a class="link link-hover hover:text-[#F85559]">Terms of Service</a></div>
             </div>
 
             <div>
-                <div class="grid grid-flow-col gap-4">
+                <div class="grid grid-cols-3 lg:grid-cols-6 gap-10">
                     <!-- <div class="flex justify-center items-center mx-auto gap-2"> -->
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    </a></div>
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    </a></div>
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    </a></div>
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    </a></div>
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#" class="btn btn-circle bg-[#F85559]">
+                    </a></div>
+                    <div><a href="#" class="btn btn-circle bg-[#F85559]">
                         <i class="fab fa-github"></i>
-                    </a>
+                    </a></div>
                 </div>
             </div>
             <div>
                 <p>Copyright © 2023 - All right reserved by :
-                    <a href="#" class="link link-hover hover:text-[#F85559]">Fruit Brust</a> & Developed by : <a href="https://github.com/sorowar-cse" class="link link-hover hover:text-[#F85559]">Sorowar Mahabub</a></p>
+                    <a href="#" class="link link-hover hover:text-[#F85559]">Fruit Brust</a> & Developed by : <a
+                        href="https://github.com/sorowar-cse" class="link link-hover hover:text-[#F85559]">Sorowar
+                        Mahabub</a>
+                </p>
             </div>
         </footer>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
